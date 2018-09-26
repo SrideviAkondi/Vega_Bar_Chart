@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#barchart{
+    max-width: 800px;
+    height: 600px;
+    background-color: white;
+}
+</style>
+  
+  <script src="https://cdn.jsdelivr.net/npm/vega@4"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-lite@2"></script>
+ 
+  <script src="https://cdn.jsdelivr.net/npm/vega-embed@3"></script>
+</head>
+<body>
+
+<div id="barchart" style= "width :800px ; length : 600px"></div>
+
+<script type="text/javascript">
+  var spec = "https://raw.githubusercontent.com/SrideviAkondi/Vega_Bar_Chart/master/barchat.json";
+  vegaEmbed('#barchart', spec).then(function(result) {
+    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+  }).catch(console.error);
+</script>
+</body>
+</html>

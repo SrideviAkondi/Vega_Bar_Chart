@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="https://cdn.jsdelivr.net/npm/vega@4"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-lite@2"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-embed@3"></script>
+<style>
+header {
+    background-color: #666;
+    padding: 5px;
+    text-align: center;
+    font-size: 25px;
+    color: white;
+}
+nav {
+    float: left;
+    width: 30%;
+    height: 50px; 
+    background: #ccc;
+    padding: 0px;
+}
+#choropleth{
+    max-width: 800px;
+    height: 800px;
+    background-color: white;
+    padding : 10px;
+}
+#barchart{
+    max-width: 800px;
+    height: 600px;
+    background-color: white;
+}
+</style>
+</head>
+
+<body>
+<header>
+<table width="100%">
+<th>
+<tr>
+<td>
+<h5>Visual Anlaytics - HW3<h5>
+</td>
+</th>
+</table>
+</header>
+<nav>
+<h3> Choropleth Map</h3>
+</nav>
+<table>
+<th>
+<tr>
+<div id="choropleth"></div>
+<nav>
+<h3>Barchart</h3>
+</nav>
+</tr>
+
+<tr>
+
+<div id="barchart"></div></tr>
+
+<script type="text/javascript">
+  var choropleth = "https://raw.githubusercontent.com/SrideviAkondi/Vega_Bar_Chart/master/choropleth.json";
+  vegaEmbed('#choropleth', choropleth)
+  .then(function(result) {
+  }).catch(console.error);
+
+  var barchart = "https://raw.githubusercontent.com/SrideviAkondi/Vega_Bar_Chart/master/barchat.json";
+  vegaEmbed('#barchart', barchart)
+  .then(function(result) {
+  }).catch(console.error);
+  </script>
+  
+</body>
+</html>
