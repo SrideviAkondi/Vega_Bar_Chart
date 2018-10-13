@@ -1,4 +1,4 @@
-# Vega_Bar_Chart
+# Vega Interactive Visualizations
 Created interactive multiform visualization system in Tableau and separate single forms in Vega
 
 The visualization system should contain two views:
